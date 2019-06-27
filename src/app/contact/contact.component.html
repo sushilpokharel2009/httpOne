@@ -1,0 +1,89 @@
+<div class="container">
+  <!-- <div class="row">
+    <form action="" [formGroup]="personForm">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="First Name" formControlName="fname">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Last Name" formControlName="lname">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" placeholder="Email" formControlName="email">
+      </div>
+      <div class="form-group">
+        <input type="number" class="form-control" placeholder="Phone" formControlName="phone">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Password" formControlName="password">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="Confirm Password" formControlName="cPassword">
+      </div>
+      <div class="form-group">
+        <ng-container formGroupName="parents">
+          Address:
+          <input type="number" class="form-control" Placeholder="House No" formControlName="houseNo">
+          <input type="text" class="form-control" Placeholder="Street" formControlName="street">
+          <input type="text" class="form-control" Placeholder="City" formControlName="city">
+          <input type="text" class="form-control" Placeholder="State" formControlName="state">
+          <input type="number" class="form-control" Placeholder="Zip Code" formControlName="zip">
+        </ng-container>
+      </div>
+      <div class="form-group">
+        <button (click)="submit()">Submit</button>
+        <button (click)="reset()">Reset</button>
+      </div>
+    </form>
+  </div> -->
+
+
+  <div class="row">
+    <table>
+      <tbody [formGroup]="userForm">
+        <tr>
+          <td>
+            NAme
+          </td>
+          <td>
+            <input type="text" formControlName="name">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Email
+          </td>
+          <td>
+            <input type="text" formControlName="email">
+          </td>
+          <td>
+            Mobile
+          </td>
+          <td>
+            <input type="number" formControlName="mob">
+          </td>
+          <td>
+            Address
+          </td>
+          <td>
+            <input type="text" formControlName="addr">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button (click)="submit()">Post</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<ul>
+  <li *ngFor="let user of users">
+    <h1>Name: {{user.name}}</h1>
+    <h2>Name: {{user.email}}</h2>
+
+  </li>
+</ul>

@@ -1,0 +1,17 @@
+ul {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  background: skyblue;
+}
+
+li {
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+a {
+  padding: 10px;
+  text-decoration: none;
+}
